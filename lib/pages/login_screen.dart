@@ -21,7 +21,10 @@ class LoginPage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: hp(2.0)),
-              SvgPicture.asset(CustomAssets.back),
+              IconButton(
+                icon: SvgPicture.asset(CustomAssets.back),
+                onPressed: () {},
+              ),
               SizedBox(height: hp(21.5)),
               Text(
                 "Katya's fitness",
@@ -97,13 +100,53 @@ class LoginPage extends StatelessWidget {
                   child: Text(
                     'Registrarme',
                     style: Theme.of(context).textTheme.headline6.copyWith(
-                          color: Colors.white,
-                          fontSize: 14.0,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 0.5,
-                        ),
+                        color: Colors.white,
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 0.5),
                   ),
                 ),
+              ),
+              SizedBox(height: hp(1.5)),
+              Text(
+                'o',
+                style: Theme.of(context)
+                    .textTheme
+                    .bodyText1
+                    .copyWith(color: Colors.white, fontSize: 13.0),
+              ),
+              SizedBox(height: hp(2.0)),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  MaterialButton(
+                    onPressed: () {},
+                    textColor: Colors.red,
+                    padding: const EdgeInsets.all(16.0),
+                    shape: const CircleBorder(
+                      side: BorderSide(color: Colors.white),
+                    ),
+                    child: SvgPicture.asset(CustomAssets.facebook),
+                  ),
+                  MaterialButton(
+                    onPressed: () {},
+                    textColor: Colors.red,
+                    padding: const EdgeInsets.all(16.0),
+                    shape: const CircleBorder(
+                      side: BorderSide(color: Colors.white),
+                    ),
+                    child: SvgPicture.asset(CustomAssets.google),
+                  ),
+                  MaterialButton(
+                    onPressed: () {},
+                    textColor: Colors.red,
+                    padding: const EdgeInsets.all(16.0),
+                    shape: const CircleBorder(
+                      side: BorderSide(color: Colors.white),
+                    ),
+                    child: SvgPicture.asset(CustomAssets.mail),
+                  ),
+                ],
               )
             ],
           ),
