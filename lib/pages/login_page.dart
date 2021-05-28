@@ -27,7 +27,7 @@ class LoginPage extends StatelessWidget {
               SizedBox(height: hp(2.0)),
               IconButton(
                 icon: SvgPicture.asset(CustomAssets.back),
-                onPressed: () {},
+                onPressed: () => Navigator.pop(context),
               ),
               SizedBox(height: hp(21.5)),
               Text(
@@ -56,7 +56,11 @@ class LoginPage extends StatelessWidget {
                 hint: 'Password',
               ),
               SizedBox(height: hp(2.0)),
-              const CustomRoundedButton(title: 'Registrarme'),
+              CustomRoundedButton(
+                title: 'Registrarme',
+                onPressed: () {},
+                fontSize: 14.0,
+              ),
               SizedBox(height: hp(1.5)),
               Text(
                 'o',
