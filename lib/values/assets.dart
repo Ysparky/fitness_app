@@ -9,4 +9,5 @@ abstract class CustomAssets {
   static const loginBg = 'assets/images/login_bg.png';
   static const run = 'assets/images/run.png';
   static const welcomeBg = 'assets/images/welcome_bg.png';
+  static const models = 'assets/images/models.png';
 }

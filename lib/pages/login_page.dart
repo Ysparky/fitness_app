@@ -1,5 +1,6 @@
 import 'package:fitness_app/values/assets.dart';
 import 'package:fitness_app/values/responsive.dart';
+import 'package:fitness_app/values/routes.dart';
 import 'package:fitness_app/widgets/custom_rounded_button.dart';
 import 'package:fitness_app/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
@@ -58,7 +59,7 @@ class LoginPage extends StatelessWidget {
               SizedBox(height: hp(2.0)),
               CustomRoundedButton(
                 title: 'Registrarme',
-                onPressed: () {},
+                onPressed: () => Navigator.pushNamed(context, Routes.onboard),
                 fontSize: 14.0,
               ),
               SizedBox(height: hp(1.5)),
